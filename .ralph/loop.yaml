@@ -1,0 +1,24 @@
+# Ralph loop config for this repository. Data only: no secrets, no host commands.
+name: ralph-smoke
+base_branch: main
+branch_prefix: ralph
+model: opencode-go/deepseek-v4.1-flash
+
+# Commands that must pass before a PR is published. Empty means the agent
+# discovers the repo's own lint, typecheck and test commands.
+checks:
+  - ./check.sh
+
+# Populate exactly one selector. Empty means every To Do ticket.
+selector:
+  milestone: null
+  labels: []
+  ids: []
+
+max_in_flight_prs: 1
+
+pr_labels:
+  - ralph
+
+# Optional absolute path to an sbx kit. Defaults to <control repo>/kit when present.
+# kit: /absolute/path/to/kit
