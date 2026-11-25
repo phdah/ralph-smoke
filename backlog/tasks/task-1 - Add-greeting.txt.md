@@ -6,7 +6,8 @@ assignee:
   - '@ralph'
 created_date: '2026-11-25 15:26'
 updated_date: '2026-11-25 16:29'
-labels: []
+labels:
+  - in-review
 dependencies: []
 priority: medium
 type: task
@@ -33,3 +34,9 @@ Create greeting.txt at the repository root with the exact line: hello from ralph
 2. Run ./check.sh to verify.
 3. Update ticket state and publish PR.
 <!-- SECTION:PLAN:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+PR: https://github.com/phdah/ralph-smoke/pull/2 (branch ralph/task-1-add-greeting-txt). ./check.sh passes.
+<!-- SECTION:NOTES:END -->
