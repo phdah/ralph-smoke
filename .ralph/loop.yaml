@@ -1,5 +1,5 @@
 # Ralph loop config for this repository. Data only: no secrets, no host commands.
-name: ralph-smoke
+name: ralph-smoke-2
 base_branch: main
 branch_prefix: ralph
 # model: provider/model  (optional: overrides the lane's primary agent only)
