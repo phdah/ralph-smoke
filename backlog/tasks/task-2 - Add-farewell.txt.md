@@ -4,8 +4,9 @@ title: Add farewell.txt
 status: In Progress
 assignee: []
 created_date: '2026-11-26 11:06'
-updated_date: '2026-11-26 11:27'
-labels: []
+updated_date: '2026-11-26 11:28'
+labels:
+  - in-review
 dependencies: []
 ordinal: 2000
 ---
@@ -48,4 +49,6 @@ Round 1 coder reported STATUS: DONE. Red seam check exited 1 before creation bec
 Round 1 independent tester reported STATUS: PASS. `test -f farewell.txt` exited 0; exact-byte cmp against `goodbye from ralph\n` exited 0; `./check.sh` exited 0 with `check: ok`. Tester confirmed the committed diff adds only farewell.txt, its 19 bytes contain one trailing LF and no CR or extra content, and check.sh and greeting.txt are unchanged. All three acceptance criteria are checked on this objective evidence. Standards and Spec reviews are pending; nothing has been pushed.
 
 Review completed once with fixed point origin/main. Standards reviewer: VERDICT: APPROVED, no findings; single trailing LF, no whitespace errors, no documented convention breached. Spec reviewer: VERDICT: APPROVED, no findings; exact required root artifact and content, all acceptance criteria met, no scope creep. No fix round was needed. Last tester report remains STATUS: PASS, so publication is authorized.
+
+PR opened: https://github.com/phdah/ralph-smoke/pull/3. Ticket is In Progress with label `in-review`. Publication followed independent STATUS: PASS evidence: root-file existence exit 0, exact-byte cmp exit 0, and `./check.sh` exit 0 with `check: ok`; Standards and Spec reviews both approved with no findings. No blocked or needs-human label was present.
 <!-- SECTION:NOTES:END -->
