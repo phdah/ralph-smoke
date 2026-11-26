@@ -2,7 +2,7 @@
 name: ralph-smoke
 base_branch: main
 branch_prefix: ralph
-model: opencode-go/deepseek-v4.1-flash
+# model: provider/model  (optional: overrides the lane's primary agent only)
 
 # Commands that must pass before a PR is published. Empty means the agent
 # discovers the repo's own lint, typecheck and test commands.
