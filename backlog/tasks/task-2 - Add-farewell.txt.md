@@ -1,12 +1,11 @@
 ---
 id: TASK-2
 title: Add farewell.txt
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-26 11:06'
-updated_date: '2026-11-26 11:28'
-labels:
-  - in-review
+updated_date: '2026-11-26 11:32'
+labels: []
 dependencies: []
 ordinal: 2000
 ---
@@ -51,4 +50,12 @@ Round 1 independent tester reported STATUS: PASS. `test -f farewell.txt` exited 
 Review completed once with fixed point origin/main. Standards reviewer: VERDICT: APPROVED, no findings; single trailing LF, no whitespace errors, no documented convention breached. Spec reviewer: VERDICT: APPROVED, no findings; exact required root artifact and content, all acceptance criteria met, no scope creep. No fix round was needed. Last tester report remains STATUS: PASS, so publication is authorized.
 
 PR opened: https://github.com/phdah/ralph-smoke/pull/3. Ticket is In Progress with label `in-review`. Publication followed independent STATUS: PASS evidence: root-file existence exit 0, exact-byte cmp exit 0, and `./check.sh` exit 0 with `check: ok`; Standards and Spec reviews both approved with no findings. No blocked or needs-human label was present.
+
+Reviewer iteration for https://github.com/phdah/ralph-smoke/pull/3: Standards reviewer returned VERDICT: APPROVED; Spec reviewer returned VERDICT: APPROVED; tester returned STATUS: PASS on head 43966ec84bc504b38ceafa3a9ac96e349e2d3067. `./check.sh` exited 0 with `check: ok`; root-file existence and exact-byte comparison both exited 0. No separate lint, typecheck or test suite exists. No deleted or sensitive paths, unresolved review threads, or extra linked tickets were found. Marking Done and removing `in-review`.
 <!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Added `farewell.txt` at the repository root with exactly `goodbye from ralph` and one trailing LF. Independent reviewer verification confirmed the exact 19-byte contents, and `./check.sh` exited 0 with `check: ok`. The only other change is TASK-2 bookkeeping.
+<!-- SECTION:FINAL_SUMMARY:END -->
